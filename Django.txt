@@ -1,0 +1,27 @@
+
+-------------
+-- Ambiente
+-------------
+python3 -m venv /path/to/new/virtual/environment
+python  -m venv ./venv
+
+Windows: 
+$ c:/Projects/Python/Django/venv/scripts/activate
+
+MAC: 
+$ source /users/Projects/Python/venv/bin/activate
+
+
+-------------
+-- Django
+-------------
+pip install Django==3.1.6 
+pip install Django
+django-admin help
+django-admin startproject nome_projeto .
+
+
+----------------------
+-- Módulos Instalados
+----------------------
+pip freeze
