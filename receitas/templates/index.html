@@ -31,7 +31,9 @@
         <div class="container">
             <div class="row">
 
-                {% for chave, nome_receita in nome_das_receitas.items %}
+                {% if receitas %}
+                {% comment %} {% for chave, nome_receita in nome_das_receitas.items %} {% endcomment %}
+                {% for receita in receitas %}
 
                 <!-- Single Best Receipe Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -39,13 +41,16 @@
                         <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
                         <div class="receipe-content">
                             <a href="receita.html">
-                                <h5>{{ nome_receita }}</h5>
+                                <h5>{{ receita.nome_receita }}</h5>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 {% endfor %}
+                {% else %}
+
+                {% endif %}
 
             </div>
         </div>
