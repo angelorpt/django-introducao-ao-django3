@@ -69,8 +69,6 @@ TEMPLATES = [
         },
     },
 ]
-print (BASE_DIR)
-print (TEMPLATES)
 
 WSGI_APPLICATION = 'alurareceita.wsgi.application'
 
@@ -130,5 +128,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'alurareceita/static')
 ]
-print (STATIC_ROOT)
-print (STATICFILES_DIRS)
