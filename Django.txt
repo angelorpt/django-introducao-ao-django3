@@ -88,3 +88,26 @@ from django.sh­ortcuts import render
 def index(request):
 	return render­(re­quest, 'index.html')
 	
+
+
+#-------------------------------------
+#-- Configurando arquivos estáticos
+#-------------------------------------
+
+import os
+
+
+TEMPLATES = [
+    {
+        ...
+        'DIRS': [os.path.join(BASE_DIR, 'receitas/templates')],
+        ...
+    },
+]
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'alurareceita/static')
+]
