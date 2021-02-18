@@ -12,6 +12,11 @@ MAC:
 $ source /users/Projects/Python/venv/bin/activate
 
 
+----------------------
+-- Módulos Instalados
+----------------------
+pip freeze
+
 -------------
 -- Django
 -------------
@@ -21,7 +26,26 @@ django-admin help
 django-admin startproject nome_projeto .
 
 
-----------------------
--- Módulos Instalados
-----------------------
-pip freeze
+File "alurareceita\settings.py"
+------------------------------
+LANGUAGE_CODE = 'pt-br'
+TIME_ZONE     = 'America/Manaus'
+
+
+// Rodar Servidor
+python manage.py runserver
+
+-----------
+-- vsCode
+-----------
+Ctrl + Shift + P = Python Select Interpreter
+
+
+---------------
+-- Criar APP
+---------------
+
+python manage.py startapp receitas
+
+	from django.urls import path
+	from . import views
