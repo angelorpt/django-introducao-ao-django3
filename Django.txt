@@ -111,3 +111,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'alurareceita/static')
 ]
+
+
+
+
+#--------------------------
+#- Instalando o Postgre
+#--------------------------
+$ pip install psycopg2
+$ pip install psycopg2-binary
